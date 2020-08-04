@@ -1,0 +1,16 @@
+<div class="flex">
+  <div class="card" *ngFor="let developer of developers">
+    <div class="card-body">
+      <div class="card-thumb">
+        <i class="fa fa-user-circle"></i>
+      </div>
+      <h5 class="card-title">{{developer.name}}</h5>
+      <p class="card-text">
+        <span><i class="fa fa-envelope-o"></i> mail@exemple.com</span>
+        <span><i class="fa fa-map-marker"></i> {{developer.city}} - {{developer.state}}</span>
+      </p>
+      <a href="#" class="card-link edit"><i class="fa fa-pencil"></i></a>
+      <a href="#" class="card-link delete"><i class="fa fa-trash-o"></i></a>
+    </div>
+  </div>
+</div>

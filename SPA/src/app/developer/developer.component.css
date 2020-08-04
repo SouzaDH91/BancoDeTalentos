@@ -1,0 +1,38 @@
+.card {
+    width: calc(100% / 5 - 5px);
+    display: inline-flex;
+    margin: 0 0 10px 5px;
+}
+.card .card-body {
+    text-align: center;
+}
+.card .card-body .card-thumb {
+    margin: 0 auto;
+}
+.card .card-body .card-thumb i {
+    font-size: 64px;
+    color: #666;
+}
+.card:hover .card-body .card-thumb i {
+    font-size: 64px;
+    color: #999;
+}
+.card .card-body .card-title {
+    margin-top: 10px;
+    color: #666;
+}
+.card .card-body .card-text span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card .card-body .card-link {
+    color: #333;
+}
+.card .card-body .card-link:hover.edit {
+    color: #069;
+}
+.card .card-body .card-link:hover.delete {
+    color: rgba(181,26,34,1);
+}
