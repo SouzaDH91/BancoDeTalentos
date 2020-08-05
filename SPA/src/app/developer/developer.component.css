@@ -3,6 +3,9 @@
     display: inline-flex;
     margin: 0 0 10px 5px;
 }
+.card:hover {
+    border: 1px solid #999;
+}
 .card .card-body {
     text-align: center;
 }

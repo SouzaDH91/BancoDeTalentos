@@ -24,25 +24,33 @@ namespace API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BestHour");
+                    b.Property<string>("BestHour");
 
-                    b.Property<string>("City");
+                    b.Property<string>("City")
+                        .IsRequired();
 
-                    b.Property<int>("Disponibility");
+                    b.Property<string>("Disponibility");
+
+                    b.Property<string>("Email")
+                        .IsRequired();
 
                     b.Property<string>("Linkedin");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
-                    b.Property<string>("Phone");
+                    b.Property<string>("Phone")
+                        .IsRequired();
 
                     b.Property<string>("Portfolio");
 
                     b.Property<double>("Requirements");
 
-                    b.Property<string>("Skype");
+                    b.Property<string>("Skype")
+                        .IsRequired();
 
-                    b.Property<string>("State");
+                    b.Property<string>("State")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
